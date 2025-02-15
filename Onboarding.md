@@ -86,11 +86,17 @@ Given the user has installed the Uber app on their device
     Then the user should receive an error message indicating the phone number is invalid  
     And the user should be prompted to enter a valid phone number
 
-### Scenario: Failed Onboarding Due to Incorrect Verification Code
+  Scenario: Failed Onboarding Due to Incorrect Verification Code
     Given the user has entered a valid phone number  
     When the user enters an incorrect verification code  
     Then the user should receive an error message indicating the code is incorrect
     And the user should be prompted to re-enter the verification code
+
+  Scenario: Failed Onboarding Due to Declined Terms and Conditions
+    Given the user has completed phone number verification  
+    When the user declines the terms and conditions  
+    Then the user should be informed that acceptance of the terms is required to use the app  
+    And the user should be prompted to accept the terms and conditions to proceed
             
 
 
