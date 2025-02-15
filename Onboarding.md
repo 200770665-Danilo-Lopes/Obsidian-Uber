@@ -61,8 +61,8 @@ Given the user has installed the Uber app on their device
     When the user accepts the terms and conditions
     Then the app proceeds to the main screen, ready for service selection
 
-@permissions
-  Scenario: Granting Necessary Permissions
+  @permissions
+    Scenario: Granting Necessary Permissions
     Given the user has logged into their account
     When the app requests location access permission
     And the user grants location access
@@ -70,8 +70,8 @@ Given the user has installed the Uber app on their device
     When the user grants notification permission
     Then the app confirms all necessary permissions are granted
 
-  @main_interface
-  Scenario: Accessing the Main Interface
+   @main_interface
+    Scenario: Accessing the Main Interface
     Given the user has completed account setup and granted necessary permissions
     When the app displays the main screen
     Then the user can choose between ride services or food ordering
