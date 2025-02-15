@@ -4,7 +4,7 @@
 ### Description
 
 Uber Onboarding Flow guides new users through account creation or login, verification, and 
-acceptance of terms before accessing the main app screen for ride or food ordering.
+acceptance of terms before accessing the main app screen for requesting rides or ordering food.
 (Available on: https://mobbin.com/flows/3fe8ec28-3104-4ad4-a8fd-6067ed54d533?tab=screens&scrollToScreenIndex=3)
 
 ### Page
